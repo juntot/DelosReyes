@@ -1,1 +1,223 @@
-s
+/*
+Theme Name: Delos Reyes Optical
+Theme URI: 
+Description: A lightweight, 2-3 columns, widget ready, SEO optimized, fast loading, easy to customize WordPress theme.
+Version: 1.8.5
+Author: Delos Reyes
+Author URI: 
+Tags: two-columns, three-columns, right-sidebar, threaded-comments, sticky-post, custom-background
+Text Domain: quickpress
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Begin Typography &amp; Colors
+------------------------------------- */
+/*navbar*/
+
+.navbar{
+	margin-bottom:0px;
+	
+}
+
+.navbar-inverse{
+	border-radius:0px;
+	background-color:#2A8849;
+	border:0px;
+	position:sticky;
+	top:0px;
+	z-index:90;
+}
+
+
+.navbar-inverse .navbar-collapse{
+	border-color:green;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover{
+background-color:#30B25B;
+
+}
+
+.navbar-inverse .navbar-toggle
+{
+	border-color:#30B25B;
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover
+{
+	background-color:#30B25B;
+}
+
+.navbar-right li:hover{
+	background-color:#30B25B;
+}
+
+
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover{
+	background-color:#30B25B;
+}
+
+
+@media (min-width: 768px)
+{
+	.navbar-right{margin-top:59px;}
+}
+.navbar-toggle{
+	margin-top:35px;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color:white;
+}
+
+/*color indicators carousel
+.carousel-indicators .active{background-color:#23AF21;}
+.carousel-indicators li{border-color:#23AF21;}*/
+
+.carousel-inner img{
+width:100%;
+height:auto;
+}
+
+/*gallery*/
+.gallery{
+	border:1px solid #2A8849;
+	border-radius:5px;
+	padding-bottom:10px;
+	overflow:hidden;
+}
+
+.g-thumb{
+	
+	position:relative;
+	width:400px;
+	height:370px;
+	margin:0 auto;	
+	
+	
+}
+
+.g-thumb img{
+	
+	position:absolute;
+	width:100%;
+	height:auto;
+	max-width:380px;
+	top:0px;
+	left:0px;
+	
+}
+
+.dot{
+	border-radius:50%;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #77CE93;
+	display: inline-block;
+    position:relative;
+}
+.active, .dot:hover {
+	background-color: #2A8849;
+}
+
+
+/*contact form*/
+.wpcf7-form label{
+	width:100%;
+	color:#2A8849;
+}
+input[type="text"], 
+input[type="email"], 
+textarea{
+
+	width:100%;
+	border:1px solid #6E412E;
+	font-style: normal;
+	color:#333;
+	border-radius:4px;
+	resize: none;
+}
+/*validation tips*/
+.use-floating-validation-tip span.wpcf7-not-valid-tip{
+border-style:none;
+top:-5px;
+left:3px;
+z-index:1;
+background:transparent;
+}
+
+
+/*footer*/
+footer .footer-wrap{
+
+	background:#2A8849; 
+	color:white;
+	padding:16px 0px;
+	
+}
+.footer-add{float:left;}
+.contact-detail{float:right;}
+@media (max-width: 532px)
+{
+	.footer-add{
+		float:none;
+		padding:8px 0px;
+	}
+	.contact-detail{
+		float:none;
+		
+	}
+}
+
+/*font awesome css*/
+.fa {
+  
+  font-size: 18px;
+  width:30px;
+  height:30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color:#137C36;
+  position:relative;
+}
+.fa-facebook, 
+.fa-instagram, 
+.fa-twitter, 
+.fa-tumblr{
+	/*border:1.4px solid #137C36;*/
+	border:1.4px solid white;
+  margin-right:7px;
+  
+  -webkit-transition: -webkit-transform 1s linear; /* For Safari 3.1 to 6.0 */
+    transition: transform 1s linear;
+}
+.fa-facebook:before, 
+.fa-instagram:before, 
+.fa-twitter:before, 
+.fa-tumblr:before{
+	position:relative;
+	top:4px;
+	color:white;
+	
+}
+.fa-facebook:hover, 
+.fa-instagram:hover, 
+.fa-twitter:hover, 
+.fa-tumblr:hover{
+	
+	-ms-transform: rotateY(360deg); /* IE 9 */
+    -webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg); /* Standard syntax */
+
+}
+
