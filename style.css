@@ -221,3 +221,12 @@ footer .footer-wrap{
 
 }
 
+
+/*404*/
+#post-404 h1{
+	
+	text-align:center;
+	height:100%;
+	padding:50% 0px;
+}
+
