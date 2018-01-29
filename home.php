@@ -6,7 +6,7 @@ Template Name: home
 
 <?php get_header();?>
 <main>
-<article>
+<article class="container">
 	<div class="row-fluid">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->

@@ -8,7 +8,7 @@ function droptical_setup() {
 	'header-nav' => 'Header Menu',
 	) );
 
-	
+	//post formats 
 		add_theme_support( 'post-formats', array(
 		'aside',
 		'image',
@@ -17,6 +17,13 @@ function droptical_setup() {
 		'link',
 		'gallery',
 		'audio',
+	) );
+	
+	//LOGO
+		add_theme_support( 'custom-logo', array(
+		'height'      => 100,
+		'width'       => 400,
+		'flex-width' => true,
 	) );
 	
 }
@@ -42,4 +49,29 @@ function droptical_scripts() {
 	
 
 */
+
+
+//add_theme_support( 'post-thumbnails', array( 'page' ) );
+
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '<section id="main">';
+}
+
+function my_theme_wrapper_end() {
+  echo '</section>';
+}
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 ?>

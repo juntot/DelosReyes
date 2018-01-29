@@ -18,6 +18,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 ------------------------------------- */
 /*navbar*/
 
+
+
+
 .navbar{
 	margin-bottom:0px;
 	
@@ -86,6 +89,16 @@ width:100%;
 height:auto;
 }
 
+
+/*services*/
+.table-cell h4{
+	
+	color:#2A8849;
+}
+
+
+
+
 /*gallery*/
 .gallery{
 	border:1px solid #2A8849;
@@ -130,11 +143,29 @@ height:auto;
 }
 
 
+/*about us*/
+	.td-cell{
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+
+
 /*contact form*/
+
 .wpcf7-form label{
 	width:100%;
 	color:#2A8849;
 }
+
+.wpcf7-form .add-info{
+	
+	-webkit-margin-before: 1em; /*emails and phone info*/
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
 input[type="text"], 
 input[type="email"], 
 textarea{
@@ -166,17 +197,7 @@ footer .footer-wrap{
 }
 .footer-add{float:left;}
 .contact-detail{float:right;}
-@media (max-width: 532px)
-{
-	.footer-add{
-		float:none;
-		padding:8px 0px;
-	}
-	.contact-detail{
-		float:none;
-		
-	}
-}
+
 
 /*font awesome css*/
 .fa {
@@ -227,6 +248,84 @@ footer .footer-wrap{
 	
 	text-align:center;
 	height:100%;
-	padding:50% 0px;
+	padding:18.5% 0px;
+	max-height:100%;
 }
 
+
+
+/*glyphicon*/
+.glyphicon
+{
+	
+	color:#2A8849;
+}
+
+/*========== Mobile First Method ==========*/
+@media (max-width: 532px)
+{
+	.footer-add{
+		float:none;
+		padding:8px 0px;
+	}
+	.contact-detail{
+		float:none;
+		
+	}
+}
+/*footer media*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+.td-cell{display:block;}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

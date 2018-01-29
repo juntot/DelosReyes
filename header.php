@@ -15,7 +15,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="page">
+
+    <div id="page" >
 
         <header id="header">
 		<!---
@@ -40,14 +41,14 @@
 			--->
         </header>
 		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 					</button>
-					<a class="" href="#" style=""><div style="width:100px; padding-top:5px; padding-bottom:5px;"><img src="<?php echo get_template_directory_uri();?>/img/DLRL-3Dogo-1.png" style="width:100%; height:auto;"/></div></a>
+					<div style="width:100px; padding-top:5px; padding-bottom:5px;"><?php the_custom_logo(); ?></div>
 				</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<?php wp_nav_menu(array(

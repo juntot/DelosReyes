@@ -1,6 +1,8 @@
 <?php get_header(); ?>
   <main>
-        <section>
+        <article class="container">
+		
+		page
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <article class="post" id="post-<?php the_ID(); ?>">
                 <h1><?php the_title(); ?></h1>
@@ -18,7 +20,7 @@
 
                 </div>
 
-                <?php comments_template(); ?>
+                <?php //comments_template(); ?>
             </article>
 
             <?php endwhile; ?>
@@ -30,8 +32,8 @@
             </article>
             <?php endif; ?>
 
-            <?php edit_post_link(); ?>
+            <?php //edit_post_link(); ?>
 
-        </section>
+        </article>
     </main>
 <?php get_footer(); ?>
