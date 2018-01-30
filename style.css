@@ -101,12 +101,15 @@ height:auto;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: stretch;
 }
 .flex-container>div {
  
 	margin: 10px;
 	width:100%;
+	
 	max-width:350px;
+	
 	border-radius:20px;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 	padding:20px;
@@ -193,6 +196,41 @@ textarea{
 	border-radius:4px;
 	resize: none;
 }
+input[type="submit"]{
+	
+	width:100px;
+	height:30px;
+	opacity: 0.1;
+	
+}
+input[type="submit"]:hover{
+	
+	background-color:white;
+	opacity: 0.2;
+	
+}
+
+/*custom button*/
+
+.glyphicon-send:before{
+	
+	color:white;
+}
+.custom-submit{
+	display:inline-block;
+	border:1px solid black;
+	width:100px;
+	text-align:center;
+	position:relative;
+	bottom:40px;
+	padding:4px 0px;
+	z-index:-1;
+	border-radius:4px;
+	background-color:#2A8849;
+	color:white;
+}
+
+
 /*validation tips*/
 .use-floating-validation-tip span.wpcf7-not-valid-tip{
 border-style:none;
@@ -263,9 +301,9 @@ footer .footer-wrap{
 #post-404 h1{
 	
 	text-align:center;
-	height:100%;
-	padding:18.5% 0px;
-	max-height:100%;
+	
+	padding:300px 0px;
+	
 }
 
 
@@ -273,6 +311,10 @@ footer .footer-wrap{
 /*glyphicon*/
 .glyphicon
 {
+	
+	color:#2A8849;
+}
+h4{
 	
 	color:#2A8849;
 }

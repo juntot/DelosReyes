@@ -31,9 +31,10 @@ Template Name: Contact-us
 					</label><br>
 						<span class="info"><?php the_field('phone_numbers');?></span><br>
 				</p>
-						<?php echo do_shortcode('[contact-form-7 id="27" title="Contact form 1" html_class="use-floating-validation-tip"]');?>
-					
-				
+						
+							<?php echo do_shortcode('[contact-form-7 id="27" title="Contact form 1" html_class="use-floating-validation-tip"]');?>
+							<span href="#" class="custom-submit"><span class="glyphicon glyphicon-send"></span> Send</span>
+						
 			</div>
 			<div class="col-lg-6 col-md-6 col-xs-12">
 			<p></p>
